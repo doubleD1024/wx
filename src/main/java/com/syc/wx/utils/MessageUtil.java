@@ -96,7 +96,7 @@ public class MessageUtil {
      */
     @SuppressWarnings("unchecked")
     public static Map<String, String> xmlToMap(HttpServletRequest request) throws IOException {
-        Map<String, String> map = new HashMap<String, String>(16);
+        Map<String, String> map = new HashMap<>(16);
         SAXReader reader = new SAXReader();
 
         InputStream ins = null;
@@ -133,7 +133,7 @@ public class MessageUtil {
     public static Map<String, String> parseXml(HttpServletRequest request)
             throws Exception {
         // 将解析结果存储在HashMap中
-        Map<String, String> map = new HashMap<String, String>();
+        Map<String, String> map = new HashMap<>();
         // 从request中取得输入流
         InputStream inputStream = request.getInputStream();
         // 读取输入流

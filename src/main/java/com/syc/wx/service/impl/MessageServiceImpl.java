@@ -2,8 +2,6 @@ package com.syc.wx.service.impl;
 
 import com.syc.wx.constant.AccessToken;
 import com.syc.wx.constant.ConstantWeChat;
-import com.syc.wx.message.Article;
-import com.syc.wx.message.NewsMessage;
 import com.syc.wx.message.TextMessage;
 import com.syc.wx.service.MessageService;
 import com.syc.wx.utils.*;
@@ -13,8 +11,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -22,7 +18,9 @@ import java.util.Map;
  */
 @Service("messageService")
 public class MessageServiceImpl implements MessageService {
+
     private static final Logger LOGGER = LoggerFactory.getLogger(MessageServiceImpl.class);
+
     @Override
     public String newMessageRequest(HttpServletRequest request) {
         String respMessage = null;
@@ -117,11 +115,6 @@ public class MessageServiceImpl implements MessageService {
                     respMessage = MessageUtil.newsMessageToXml(newmsg);*/
 
                 }
-                /*// TODO 取消订阅后用户再收不到公众号发送的消息，因此不需要回复消息
-                else if (eventType.equals(MessageUtil.EVENT_TYPE_UNSUBSCRIBE)) {
-                    // 取消订阅
-
-                }*/
                 // 自定义菜单点击事件
                 else if (eventType.equals(MessageUtil.EVENT_TYPE_CLICK)) {
                     // 事件KEY值，与创建自定义菜单时指定的KEY值对应

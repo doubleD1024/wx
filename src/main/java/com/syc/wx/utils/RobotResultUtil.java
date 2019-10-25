@@ -1,16 +1,12 @@
 package com.syc.wx.utils;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * TODO
  *
  * @author lidd
  * @date 2019-10-24 16:50
@@ -57,7 +53,11 @@ public class RobotResultUtil {
         }
     }
 
-    //Unicode转中文
+    /**
+     * Unicode转中文
+     * @param unicode unicode
+     * @return 中文
+     */
     public static String decodeUnicode(final String unicode) {
         StringBuffer string = new StringBuffer();
 
@@ -99,9 +99,6 @@ public class RobotResultUtil {
 
     /**
      * 判断是否为中文字符
-     *
-     * @param c
-     * @return
      */
     public static boolean isChinese(char c) {
         Character.UnicodeBlock ub = Character.UnicodeBlock.of(c);

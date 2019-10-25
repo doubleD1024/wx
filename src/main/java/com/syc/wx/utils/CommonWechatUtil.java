@@ -183,11 +183,9 @@ public class CommonWechatUtil {
         // 调用接口创建菜单
         JSONObject jsonObject = httpsRequest(url, "POST", jsonMenu);
 
-        if (null != jsonObject) {
-            if (0 != jsonObject.getInt("errcode")) {
-                result = jsonObject.getInt("errcode");
-                log.error("创建菜单失败 errcode:{} errmsg:{}", jsonObject.getInt("errcode"), jsonObject.getString("errmsg"));
-            }
+        if (null != jsonObject && 0 != jsonObject.getInt("errcode")) {
+            result = jsonObject.getInt("errcode");
+            log.error("创建菜单失败 errcode:{} errmsg:{}", jsonObject.getInt("errcode"), jsonObject.getString("errmsg"));
         }
 
         return result;
@@ -200,16 +198,12 @@ public class CommonWechatUtil {
      * @return 0表示成功，其他值表示失败
      */
     public static JSONObject getMenu(String accessToken) {
-        int result = 0;
 
         // 拼装创建菜单的url
         String url = MENU_GET_URL.replace("ACCESS_TOKEN", accessToken);
         // 将菜单对象转换成json字符串
-//        String jsonMenu = JSONObject.fromObject(menu).toString();
         // 调用接口创建菜单
-        JSONObject jsonObject = httpsRequest(url, "POST", null);
-
-        return jsonObject;
+        return httpsRequest(url, "POST", null);
     }
 
     /**
@@ -226,15 +220,12 @@ public class CommonWechatUtil {
         // 调用接口创建菜单
         JSONObject jsonObject = httpsRequest(url, "POST", null);
 
-        if (null != jsonObject) {
-            if (0 != jsonObject.getInt("errcode")) {
-                result = jsonObject.getInt("errcode");
-                log.error("删除菜单失败 errcode:{} errmsg:{}", jsonObject.getInt("errcode"), jsonObject.getString("errmsg"));
-            }
+        if (null != jsonObject && 0 != jsonObject.getInt("errcode")) {
+            result = jsonObject.getInt("errcode");
+            log.error("删除菜单失败 errcode:{} errmsg:{}", jsonObject.getInt("errcode"), jsonObject.getString("errmsg"));
         }
         return result;
     }
-
 
     public static void sendMessage(String accessToken, String jsonString) {
         // 拼装创建菜单的url

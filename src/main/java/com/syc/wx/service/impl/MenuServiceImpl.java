@@ -112,23 +112,7 @@ public class MenuServiceImpl implements MenuService {
         btn12.setType("click");
         btn12.setKey("return_content");
 
-        /*CommonButton btn12 = new CommonButton();
-        btn12.setName("赞");
-        btn12.setType("click");
-        btn12.setKey("return_content");
-
-        ComplexButton mainBtn1 = new ComplexButton();
-        mainBtn1.setName("自我介绍");
-        mainBtn1.setSub_button(new BasicButton[] { btn11 });
-
-        ComplexButton mainBtn2 = new ComplexButton();
-        mainBtn2.setName("谢谢！");
-        mainBtn2.setSub_button(new BasicButton[] { btn41, btn12 });*/
-
-        /**
-         *在某个一级菜单下没有二级菜单的情况，menu应该这样定义：
-         * menu.setButton(new Button[] { mainBtn1, mainBtn2, btn33 });
-         */
+        // 在某个一级菜单下没有二级菜单的情况，menu应该这样定义
         Menu menu = new Menu();
         menu.setButton(new BasicButton[] { btn11, btn41, btn12});
 

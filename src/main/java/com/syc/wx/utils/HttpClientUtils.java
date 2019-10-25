@@ -64,9 +64,6 @@ public class HttpClientUtils {
 
             String line;
             while ((line = in.readLine()) != null) {
-
-                logger.info(line);
-
                 result += line;
             }
 
