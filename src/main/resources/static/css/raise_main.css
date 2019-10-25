@@ -1,0 +1,341 @@
+.popup-back[data-v-effaeafa] {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    overflow: hidden
+}
+
+.popup-back .popup[data-v-effaeafa] {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 92%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px
+}
+
+.popup-back .popup .content-head[data-v-effaeafa] {
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 15px 10px
+}
+
+.popup-back .popup .content-body[data-v-effaeafa] {
+    max-height: 350px;
+    overflow-y: auto;
+    color: #666;
+    padding: 0 15px
+}
+
+.popup-back .popup .content-body .modal-header[data-v-effaeafa] {
+    font-weight: 400;
+    color: #333;
+    padding: 15px 0 10px;
+    text-align: center;
+    font-size: 18px
+}
+
+.popup-back .popup .content-body strong li[data-v-effaeafa] {
+    text-decoration: underline
+}
+
+.popup-back .popup .popup-btn[data-v-effaeafa] {
+    height: 50px;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #43ac43
+}
+
+.bottom[data-v-7c9abfa9] {
+    padding-bottom: 85px
+}
+
+.bottom .promise[data-v-7c9abfa9] {
+    margin-bottom: 15px;
+    padding: 0 15px
+}
+
+.bottom .promise .promise-header[data-v-7c9abfa9] {
+    margin: 30px 0 12px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 700 !important
+}
+
+.bottom .promise .promise-content[data-v-7c9abfa9] {
+    color: #999;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 5px
+}
+
+.bottom .bottom-tips[data-v-7c9abfa9] {
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+    padding: 15px
+}
+
+.bottom .bottom-tips .click_link[data-v-7c9abfa9] {
+    color: #43ac43;
+    text-decoration: none
+}
+
+.bottom .bottom-tips .click_link[data-v-7c9abfa9]:active, .bottom .bottom-tips .click_link[data-v-7c9abfa9]:hover {
+    color: #43ac43
+}
+
+.bottom .bottom-tips2[data-v-7c9abfa9] {
+    font-size: 14px
+}
+
+.tip-no-charge[data-v-7c9abfa9] {
+    color: #999;
+    font-size: 12px;
+    text-align: center
+}
+
+.tips_modal_button[data-v-4a263b2c] {
+    margin-left: 5px;
+    display: inline-flex;
+    font-size: 14px;
+    line-height: 20px;
+    color: #73da73;
+    display: flex;
+    align-items: center
+}
+
+.tips_modal_button img[data-v-4a263b2c] {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin-right: 3px
+}
+
+.modal-mask[data-v-4a263b2c] {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6)
+}
+
+.modal-mask .tips_modal[data-v-4a263b2c] {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 81%;
+    min-width: 210px
+}
+
+.modal-mask .tips_modal .tips_modal_title[data-v-4a263b2c] {
+    height: 65px;
+    line-height: 62px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: .3px solid #e5e5e5
+}
+
+.modal-mask .tips_modal .tips_modal_content[data-v-4a263b2c] {
+    padding: 15px 25px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666;
+    border-bottom: .3px solid #e5e5e5;
+    max-height: 160px;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.modal-mask .tips_modal .tips_modal_close_button[data-v-4a263b2c] {
+    width: 100%;
+    text-align: center;
+    height: 55px;
+    line-height: 53px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffb510;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #fff
+}
+
+.alert-msg[data-v-0f3525ed] {
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    pointer-events: none
+}
+
+.alert-msg-text[data-v-0f3525ed] {
+    position: relative;
+    top: -32px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    padding: 16px;
+    font-size: 16px;
+    min-width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 20px;
+    word-break: break-all
+}
+
+button, div, h1, h2, h3, h4, h5, ol, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    background-color: transparent
+}
+
+input {
+    -webkit-appearance: none
+}
+
+#form {
+    padding: 28px 15px
+}
+
+#form .error-border {
+    border: 1px solid #f25b4b !important
+}
+
+#form .form_item {
+    color: #333;
+    margin-bottom: 32px;
+    position: relative
+}
+
+#form .form_item > p {
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-bottom: 12px
+}
+
+#form .form_item input {
+    padding: 13px 12px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    outline-style: none
+}
+
+#form .form_item input::-webkit-input-placeholder {
+    color: #ccc
+}
+
+#form .form_item .error-tips {
+    color: #f25b4b;
+    font-size: 12px;
+    padding-top: 8px;
+    position: absolute
+}
+
+#form .form_item:last-of-type {
+    margin-bottom: 0
+}
+
+#form .form_item_option p {
+    font-size: 17px;
+    line-height: 16px;
+    color: #666;
+    font-weight: 400;
+    vertical-align: bottom
+}
+
+#form .form_item_option p span {
+    font-size: 14px
+}
+
+#form .form_item_option input {
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 0 0 transparent;
+    -webkit-appearance: none
+}
+
+#form .form_item_option input::-webkit-input-placeholder {
+    font-size: 14px
+}
+
+#submit {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    display: block;
+    padding: 10px 15px 17px;
+    width: 100%;
+    height: 71px;
+    box-sizing: border-box;
+    background-color: #fff
+}
+
+#submit button {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #ffd024, #ffa410);
+    text-align: center;
+    line-height: 41px;
+    font-size: 18px;
+    border-radius: 22px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    outline-style: none
+}
+
+.tips {
+    min-height: 32px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, .03)
+}
+
+.tips img {
+    width: 16px;
+    height: 16px;
+    margin-right: 13px
+}
+
+.tips p {
+    font-size: 13px;
+    line-height: 13px;
+    color: #ff9300
+}

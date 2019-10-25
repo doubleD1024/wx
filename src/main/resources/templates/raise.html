@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>填写信息发起筹款 - 善缘筹</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link href="http://fzsykeji.com/static/css/raise_main.css" rel="stylesheet">
+</head>
+<body>
+<div>
+    <div class="tips">
+        <img src="http://fzsykeji.com/static/img/inc.png">
+        <p>填写您的筹款信息，立即开始筹款吧</p>
+    </div>
+
+    <form action="/wx/raise/submit" method="post">
+        <div id="form">
+            <div class="form_item"><p>目标金额</p> <input type="tel" placeholder="填写筹款目标金额，没筹满也可提现" class="" name="money">
+                <span class="error-tips" th:style="'display:' + @{(${sitrue} ? 'none' : 'inline-block')} + ''">* 目标金额限额1000元-50万元</span>
+            </div>
+            <div class="form_item">
+                <p>患者姓名</p><input type="text" placeholder="请填写患者真实姓名" class="" name="name">
+                <span class="error-tips" th:style="'display:' + @{(${sitrue} ? 'none' : 'inline-block')} + ''">* 请填写患者真实姓名</span>
+            </div>
+            <div class="form_item">
+                <p>联系方式</p> <input type="tel" maxlength="11" placeholder="请填写您的常用手机号" class="" name="phoneNumber">
+                <span class="error-tips" th:style="'display:' + @{(${sitrue} ? 'none' : 'inline-block')} + ''">* 请填写正确的11位手机号，用于接收筹款通知</span>
+            </div>
+            <div class="form_item form_item_option">
+                <p>所患疾病<span>（选填）</span></p> <input type="text" placeholder="如不清楚具体疾病，可不填" name="treatment">
+            </div>
+        </div>
+        <div data-v-7c9abfa9="" class="bottom">
+            <p data-v-7c9abfa9="" class="bottom-tips bottom-tips2">
+                遇到问题了？拨打：<a data-v-7c9abfa9="" href="tel:059187245287" class="click_link">059187245287</a>咨询
+            </p>
+            <p data-v-7c9abfa9="" class="tip-no-charge">善缘筹工作人员不会向筹款发起人及其患者收取任何费用</p>
+        </div>
+        <div id="submit">
+            <button>提交信息</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
